@@ -3,5 +3,6 @@
 BEM-naming, grid, SASS, adaptive layout.
 Webpack build.
 
-##How to run
+## How to run
+
 Copy the directory.

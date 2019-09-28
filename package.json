@@ -1,0 +1,32 @@
+{
+  "name": "marketing",
+  "version": "1.0.0",
+  "description": "marketing",
+  "main": "index.js",
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-loader": "^8.0.6",
+    "path": "^0.12.7",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaSirina/Marketing.git"
+  },
+  "author": "AnnaS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnnaSirina/Marketing/issues"
+  },
+  "homepage": "https://github.com/AnnaSirina/Marketing#readme"
+}

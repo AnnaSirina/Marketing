@@ -1,0 +1,83 @@
+.hello {
+	display: flex;
+	flex-direction: column; 
+	justify-content: space-between;
+}
+
+.hello__row {
+	display: flex; 
+	margin-bottom: rem(10px);
+	justify-content: space-between;
+}
+
+.hello__form {
+	padding: rem(15px);
+	max-width: 65%;	
+	margin-left: rem(10px);
+	margin-bottom: rem(25px);
+
+	@include phones {
+	max-width: 80%;	
+	}
+}
+
+.hello__input, .hello__text {
+	border-radius: rem(5px);
+	border: 1px solid white;
+	background-color: transparent;
+	padding: rem(5px)
+}
+
+.hello__input {
+	width: 100%;
+}
+
+ .hello__input:first-child {
+ 	margin-right: rem(15px);
+ }
+
+.hello__text { 
+	width: 97%;
+	resize: none;
+	padding-bottom: rem(50px);
+}
+
+.hello__title, .hello__desc {
+	color: white;
+	margin-left: rem(10px);
+	font-weight: 300;
+}
+
+.hello__list {
+	display: flex;
+	list-style-type: none;
+
+	@include tablets {
+	padding: rem(10px);
+	}
+}
+
+.hello__item {
+	margin-right: rem(15px);
+	border-radius: 3px;
+	width: 5%;
+	text-align: center;
+
+	@include phones {
+	width: 8%;
+	}
+}
+
+
+.hello-blue {
+	background-color: #4682B4;
+}
+
+
+.hello-lblue {
+	background-color: #FF69B4;
+}
+
+.hello-pink {
+	background-color: #00FFFF;
+}

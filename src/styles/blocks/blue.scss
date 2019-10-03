@@ -1,0 +1,11 @@
+.blue__text {
+	margin: rem(15px) rem(10px);
+	font-size: rem(16px);
+	color: white;
+	font-weight: 300;
+
+	@include tablets {
+	max-width: 95%;
+	}
+}
+

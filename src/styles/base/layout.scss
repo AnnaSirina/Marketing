@@ -1,9 +1,132 @@
+html {
+    @include tablets {
+        font-size: rem(15px);
+    }
+
+    @include phones {
+        font-size: rem(13px);
+    }
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
+	background-color: #808080;
+	line-height: 1.4;
 }
 
 .wrapper {
 	width: 100vw;
 	height: auto;
-	background-color: pink;
+}
+
+.container {
+	max-width: rem(1100px);
+	margin: 0 auto;
+	display: grid;
+	grid-template-areas: 'a a a a a a b b b'
+						 'c c c c d d d d d'
+						 'c c c c e e e e e'
+						 'f f f g g g g g g';
+
+	@include tablets {
+	grid-template-areas: 'a a b b b'
+						 'c c c c c'
+						 'd d f f f'
+						 'e e e e e'
+						 'g g g g g';
+	}
+
+	@include phones {
+	grid-template-areas: 'a' 'b' 'c' 'd' 'f' 'e' 'g';
+	}
+}
+
+.section__title {
+	margin: 0;
+	padding: rem(15px) rem(10px);
+	font-size: rem(35px); 
+	font-weight: 500;
+
+	@include phones {
+	font-size: rem(20px); 
+	}
+}
+
+.section__title-span {
+	font-weight: bold;
+}
+
+.white {
+	color: white;
+	font-weight: 300;
+}
+
+.btn {
+	width: 15%;
+	text-decoration: none;
+	background-color: transparent; 
+	border: 1px solid grey;
+	padding: rem(10px);
+	margin-left: rem(10px);
+	border-radius: rem(10px);
+}
+
+/*section description*/
+
+section {
+	background-position: center;
+	background-repeat: no-repeat; 
+	background-size: cover; 
+}
+
+
+.dog {
+	background-image: url(../img/dog.jpg);
+	grid-area: a; 
+
+	@include phones {
+	height: rem(300px);
+	}
+}
+
+.webdesign {
+	background-color: #FFF8DC;
+	grid-area: b; 
+}
+
+.blue {
+	background-image: url(../img/blue.jpg);
+	grid-area: c; 
+}
+
+.yellow {
+	background-image: url(../img/yellow.jpg);
+	grid-area: d; 
+
+	@include tablets {
+	padding-bottom: rem(25px);
+	}
+}
+
+.greyDummy {
+	background-image: url(../img/dummy.jpg);
+	grid-area: e; 
+
+	@include tablets {
+	padding-bottom: rem(25px);
+	}
+}
+
+.girl {
+	background-image: url(../img/girl.jpg);
+	grid-area: f; 
+
+	@include tablets {
+	padding-bottom: rem(25px);
+	}
+}
+
+.hello {
+	background-image: url(../img/road.jpg);
+	grid-area: g; 
 }

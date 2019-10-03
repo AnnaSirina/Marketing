@@ -1,0 +1,24 @@
+.girl {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.girl__logo {
+	max-width: 10%;
+	margin-left: rem(10px);
+}
+
+.girl__name, .girl__smalltext {
+	display: block;
+	color: white;
+	margin-left: rem(10px);
+}
+
+.girl__name {
+	font-weight: bold;
+}
+
+.girl-title {
+	max-width: 55%;
+}

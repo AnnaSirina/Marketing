@@ -1,0 +1,18 @@
+.greyDummy__text {
+	margin: rem(15px) rem(10px) rem(25px) rem(10px);
+	color: white;
+	font-size: rem(14px);
+	font-weigth: 300;
+
+	@include tablets {
+	max-width: 95%;
+	}
+}
+
+.greyDummy__btn {
+	color: white; 
+}
+
+.greyDummy__btn:hover {
+	color: orange; 
+}

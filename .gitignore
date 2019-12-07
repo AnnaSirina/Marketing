@@ -1,1 +1,4 @@
+*.log
+*.lock
 node_modules
+.idea
